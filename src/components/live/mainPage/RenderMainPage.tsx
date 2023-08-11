@@ -17,8 +17,8 @@ export type RenderMainPageProps = {
     ["icon"]?: SvgProps
     ["clickToGenerate"]?: SpanProps
     ["frame5"]?: DivProps
-    ["downloadButton"]?: ButtonButtonProps["frames"];
-    ["badgeLiveDesign"]?: BadgeLiveDesignProps["frames"];
+    ["downloadButton"]?: Livedesign_Button #buttonProps["frames"];
+    ["badgeLiveDesign"]?: Livedesign_BadgeLiveDesignProps["frames"];
 
   }
 ;
