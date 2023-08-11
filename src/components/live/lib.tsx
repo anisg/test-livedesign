@@ -45,69 +45,43 @@ type ElementProps<T extends keyof JSX.IntrinsicElements> = Omit<JSX.IntrinsicEle
   content?: JSX.Element | string | null;
   as?: AllowedTags
 }
-
+export type SpanProps = ElementProps<"span">;
 export type DivProps = ElementProps<"div">;
-export function Element(props: ElementProps<AllowedTags>): JSX.Element {
+export function Element(props: ElementProps<AllowedTags> & Required<Pick<ElementProps<AllowedTags>, "as">>): JSX.Element {
+  const { replace, content, as, ...rest } = props;
 
+  if (replace !== undefined) {
+    return replace as any;
+  }
+  if (content !== undefined) {
+    return Element({ ...rest, as });
+  }
   // create a comp of type div
-  const Comp = React.createElement(props.as || "div", props) as any;
-  return <Comp {...props} />;
-
+  return React.createElement(as || "div", props);
+  // return <Comp {...props} />;
 }
 export function Div(props: ElementProps<"div">) {
-  const { replace, content, as, ...rest } = props;
-  if (as) {
-    return Element(props);
-  }
-  if (replace !== undefined) {
-    return replace as any;
-  }
-  if (content !== undefined) {
-    return <div {...rest}>{content}</div>
-  }
-  return <div {...rest} />;
+  return <Element as="div" {...props} />;
 }
-
-export type SpanProps = ElementProps<"span">;
 export function Span(props: ElementProps<"span">) {
-  const { replace, content, as, ...rest } = props;
-  if (as) {
-    return Element(props);
-  }
-  if (replace !== undefined) {
-    return replace as any;
-  }
-  if (content !== undefined) {
-    return <span {...rest}>{content}</span>
-  }
-  return <span {...rest} />;
+  return <Element as="span" {...props} />;
 }
-
-type B = JSX.IntrinsicElements["button"];
-
 export type SvgProps = ElementProps<"svg">;
 export function Svg(props: ElementProps<"svg">) {
-  const { replace, content, as, ...rest } = props;
-  if (as) {
-    return Element(props);
-  }
-  if (replace !== undefined) {
-    return replace;
-  }
-  if (content !== undefined) {
-    return <svg {...rest}>{content}</svg>
-  }
-  return <svg {...rest} />;
+  return <Element as="svg" {...props} />;
 }
 
 export type ImgProps = ElementProps<"img">;
 export function Img(props: ElementProps<"img">) {
-  const { replace, content, as, ...rest } = props;
-  if (replace !== undefined) {
-    return replace;
-  }
-  if (content !== undefined) {
-    return <img {...rest}>{content}</img>
-  }
-  return <img {...rest} />;
+  return <Element as="img" {...props} />;
+}
+
+export function HtmlButton(props: ElementProps<"button">) {
+  return <Element as="button" {...props} />;
+}
+export function HtmlA(props: ElementProps<"a">) {
+  return <Element as="a" {...props} />;
+}
+export function HtmlInput(props: ElementProps<"input">) {
+  return <Element as="input" {...props} />;
 }

@@ -2,7 +2,6 @@
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
-import { Button, ButtonProps } from '../button/Button'
 import { BadgeLiveDesign, BadgeLiveDesignProps } from '../badgeLiveDesign/BadgeLiveDesign'
 
 export type RenderMainPageProps = {
@@ -18,7 +17,7 @@ export type RenderMainPageProps = {
     ["icon"]?: SvgProps
     ["clickToGenerate"]?: SpanProps
     ["frame5"]?: DivProps
-    ["downloadButton"]?: ButtonProps["frames"];
+    ["downloadButton"]?: ButtonButtonProps["frames"];
     ["badgeLiveDesign"]?: BadgeLiveDesignProps["frames"];
 
   }
@@ -36,7 +35,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
     <Span {...frames["theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt"]} className={cls(frames,"theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt", `font-['Inter'] text-sm font-medium text-[#40454d] text-center w-[283px] relative`)}>The service allows you to generate a <Span className="font-bold">cute</Span> dog picture and download it!</Span>
     <Div {...frames["frame6"]} className={cls(frames,"frame6", `gap-[15px] flex-col items-stretch shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
       <Div {...frames["dogImageContainer"]} className={cls(frames,"dogImageContainer", `gap-2.5 flex-col items-stretch shrink-0 overflow-hidden relative bg-[#e9ecf1] opacity-100 px-[117px] py-[27px] rounded-md flex`)}>
-        <Div {...frames["content"]} className={cls(frames,"content", `gap-1.5 flex-col w-[110px] justify-center items-center shrink-0 relative opacity-100 p-0 flex`)}>
+        <Div {...frames["content"]} className={cls(frames,"content", `gap-1.5 flex-col justify-center items-center shrink-0 relative opacity-100 p-0 flex`)}>
           <svg {...frames["icon"]} className={cls(frames,"icon", ``)} width={64} height={64} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_5_28)">
               <path d="M32 63C49.1208 63 63 49.1208 63 32C63 14.8792 49.1208 1 32 1C14.8792 1 1 14.8792 1 32C1 49.1208 14.8792 63 32 63Z" fill="#DDE0E6" stroke="#949EAE" strokeWidth={2} strokeDasharray="4 5" />
@@ -49,15 +48,17 @@ export function RenderMainPage(props: RenderMainPageProps) {
               </clipPath>
             </defs>
           </svg>
-          <Span {...frames["clickToGenerate"]} className={cls(frames,"clickToGenerate", `font-['Inter'] text-xs font-medium text-[#949eae] text-center self-stretch object-cover relative`)}>click to generate</Span>
+          <Span {...frames["clickToGenerate"]} className={cls(frames,"clickToGenerate", `font-['Inter'] text-xs font-medium text-[#949eae] text-left relative`)}>click to generate</Span>
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames,"frame5", `gap-[30px] flex-row justify-center items-center shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-        <Button frames={combine({"button":{"className":"downloadButton shrink-0 flex"},"title":{"content":"Download Image"}}, frames["downloadButton"])} />
+        <livedesign_button #button {...frames["downloadButton"]} className={cls(frames,"downloadButton", `gap-0 flex-col shrink-0 relative border rounded bg-[#2758ce] opacity-100 px-3 py-1.5 border-[#2758ce] flex`)} frameName="downloadButton" instanceName="Button #button">
+          <Span {...frames["clickMe"]} className={cls(frames,"clickMe", `font-['Inter'] text-lg font-semibold text-white text-left relative`)}>Download Image</Span>
+        </livedesign_button>
       </Div>
     </Div>
   </Div>
-  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"as":"a","href":"https://livedesign.app","className":"shrink-0 absolute right-[27px] bottom-[17px] flex"},"madeOn":{"className":"oklm"}}, frames["badgeLiveDesign"])} />
+  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"className":"shrink-0 absolute right-[27px] bottom-[17px] flex"},"madeOn":{"className":"oklm"}}, frames["badgeLiveDesign"])} />
 </Div>
     );
 }
