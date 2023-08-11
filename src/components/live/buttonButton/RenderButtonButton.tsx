@@ -6,7 +6,7 @@ import { cls, HtmlButton, ElementProps, Span, SpanProps } from '../lib';
 
 export type RenderButtonProps = {
     frames?: {
-    ["button"]?: ElementProps["button"]
+    ["button"]?: ElementProps<"button">
     ["clickMe"]?: SpanProps
 
   }

@@ -17,7 +17,7 @@ export type RenderMainPageProps = {
     ["icon"]?: SvgProps
     ["clickToGenerate"]?: SpanProps
     ["frame5"]?: DivProps
-    ["downloadButton"]?: Livedesign_Button #buttonProps["frames"];
+    ["downloadButton"]?: Livedesign_ButtonProps["frames"];
     ["badgeLiveDesign"]?: Livedesign_BadgeLiveDesignProps["frames"];
 
   }
@@ -52,9 +52,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames,"frame5", `gap-[30px] flex-row justify-center items-center shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-        <livedesign_button #button {...frames["downloadButton"]} className={cls(frames,"downloadButton", `gap-0 flex-col shrink-0 relative border rounded bg-[#2758ce] opacity-100 px-3 py-1.5 border-[#2758ce] flex`)} frameName="downloadButton" instanceName="Button #button">
-          <Span {...frames["clickMe"]} className={cls(frames,"clickMe", `font-['Inter'] text-lg font-semibold text-white text-left relative`)}>Download Image</Span>
-        </livedesign_button>
+        <Button framename="downloadButton" instancename="Button" frames="{&quot;button&quot;:{&quot;className&quot;:&quot;gap-0 flex-col shrink-0 relative border rounded bg-[#2758ce] opacity-100 px-3 py-1.5 border-[#2758ce] flex&quot;},&quot;clickMe&quot;:{&quot;className&quot;:&quot;font-[" Inter'] text-lg font-semibold text-white text-left relative","content":"Download Image"}}' />
       </Div>
     </Div>
   </Div>
