@@ -53,11 +53,11 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames,"frame5", `gap-[30px] flex-row justify-center items-center shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-        <Button frames={combine([object Object], frames["downloadButton"])} />
+        <Button frames={combine({"button":{"className":"gap-0 flex-col shrink-0 relative border rounded bg-[#2758ce] opacity-100 px-3 py-1.5 border-[#2758ce] flex"},"clickMe":{"className":"font-['Inter'] text-lg font-semibold text-white text-left relative","content":"Download Image"}}, frames["downloadButton"])} />
       </Div>
     </Div>
   </Div>
-  <BadgeLiveDesign frames={combine([object Object], frames["badgeLiveDesign"])} />
+  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"as":"a","href":"https://livedesign.app","className":"shrink-0 absolute right-[27px] bottom-[17px] flex"},"madeOn":{"className":"oklm"}}, frames["badgeLiveDesign"])} />
 </Div>
     );
 }
