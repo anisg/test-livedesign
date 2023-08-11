@@ -1,7 +1,7 @@
 
 // ~ auto-generated - do not edit ~
 import React from 'react';
-import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
+import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps, ElementProps, HtmlA, HtmlButton, HtmlInput, HtmlTextarea, HtmlSelect, HtmlOption, HtmlForm, HtmlLabel, HtmlP, HtmlH1, HtmlH2, HtmlH3, HtmlH4, } from '../lib';
 import { BadgeLiveDesign, BadgeLiveDesignProps } from '../badgeLiveDesign/BadgeLiveDesign'
 
 export type RenderMainPageProps = {
@@ -25,7 +25,7 @@ export type RenderMainPageProps = {
 }
 
 export function RenderMainPage(props: RenderMainPageProps) {
-    const { frames = {}, ...restProps } = props;
+    const { frames = {} } = props;
     return (
         <Div {...frames["mainPage"]} className={cls(frames,"mainPage", `gap-[15px] flex-col justify-center items-center overflow-hidden relative bg-[#e9ecf1] opacity-100 p-[85px] flex`)}>
   <Div {...frames["frame1"]} className={cls(frames,"frame1", `gap-3 flex-col items-center shrink-0 overflow-hidden relative border shadow-[0px_4px_4px_rgba(0,0,0,0.05000000074505806)] bg-white opacity-100 pt-[25px] pb-[17px] px-[21px] rounded-xl border-[#ebebeb] flex`)}>

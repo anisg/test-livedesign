@@ -1,7 +1,7 @@
 
 // ~ auto-generated - do not edit ~
 import React from 'react';
-import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps } from '../lib';
+import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps, ElementProps, HtmlA, HtmlButton, HtmlInput, HtmlTextarea, HtmlSelect, HtmlOption, HtmlForm, HtmlLabel, HtmlP, HtmlH1, HtmlH2, HtmlH3, HtmlH4, } from '../lib';
 
 
 export type RenderBadgeLiveDesignProps = {
@@ -16,7 +16,7 @@ export type RenderBadgeLiveDesignProps = {
 }
 
 export function RenderBadgeLiveDesign(props: RenderBadgeLiveDesignProps) {
-    const { frames = {}, ...restProps } = props;
+    const { frames = {} } = props;
     return (
         <Div {...frames["badgeLiveDesign"]} className={cls(frames,"badgeLiveDesign", `gap-0.5 flex-row w-fit items-start overflow-hidden relative shadow-[0px_2px_2px_rgba(0.2356770783662796,0.2644856870174408,0.3125,0.10000000149011612)] bg-white opacity-100 pt-[9px] pb-[7px] px-3.5 rounded-md flex`)}>
   <Span {...frames["madeOn"]} className={cls(frames,"madeOn", `font-['Inter'] text-xs font-medium text-[#26292f] text-left relative`)}>Made on</Span>
