@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MoonIcon } from "./icons/Moon";
 import logo from "./logo.svg";
+import { Button } from "./components/live/button/Button";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,12 +34,14 @@ function App() {
         <img src={logo} className="animate-spin-slow h-72" alt="logo" />
         <p>Hello Vite + React!</p>
         <p className="my-8">
-          <button
-            className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
-            onClick={() => setCount((count) => count + 1)}
-          >
-            Count is: {count}
-          </button>
+          <Button frames={{
+            title: {
+              content: `Count is: ${count}`
+            },
+            button: {
+              onClick: () => setCount((count) => count + 1)
+            }
+          }} />
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.

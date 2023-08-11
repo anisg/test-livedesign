@@ -47,10 +47,10 @@ type ElementProps<T extends keyof JSX.IntrinsicElements> = Omit<JSX.IntrinsicEle
 }
 
 export type DivProps = ElementProps<"div">;
-export function Element(props: ElementProps<AllowedTags>) {
+export function Element(props: ElementProps<AllowedTags>): JSX.Element {
 
   // create a comp of type div
-  const Comp = React.createElement(props.as || "div", props);
+  const Comp = React.createElement(props.as || "div", props) as any;
   return <Comp {...props} />;
 
 }
@@ -60,7 +60,7 @@ export function Div(props: ElementProps<"div">) {
     return Element(props);
   }
   if (replace !== undefined) {
-    return replace;
+    return replace as any;
   }
   if (content !== undefined) {
     return <div {...rest}>{content}</div>
@@ -75,7 +75,7 @@ export function Span(props: ElementProps<"span">) {
     return Element(props);
   }
   if (replace !== undefined) {
-    return replace;
+    return replace as any;
   }
   if (content !== undefined) {
     return <span {...rest}>{content}</span>
