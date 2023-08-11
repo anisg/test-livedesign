@@ -1,7 +1,7 @@
 
 // ~ auto-generated - do not edit ~
 import React from 'react';
-import { combine, cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, Img, ImgProps, ElementProps, HtmlA, HtmlButton, HtmlInput, HtmlTextarea, HtmlSelect, HtmlOption, HtmlForm, HtmlLabel, HtmlP, HtmlH1, HtmlH2, HtmlH3, HtmlH4, } from '../lib';
+import { cls, Div, DivProps, Span, SpanProps } from '../lib';
 import { BadgeLiveDesign, BadgeLiveDesignProps } from '../badgeLiveDesign/BadgeLiveDesign'
 
 export type RenderMainPageProps = {

@@ -85,7 +85,6 @@ export function HtmlA(props: ElementProps<"a">) {
 export function HtmlInput(props: ElementProps<"input">) {
   return <Element as="input" {...props} />;
 }
-
 export function HtmlTextarea(props: ElementProps<"textarea">) {
   return <Element as="textarea" {...props} />;
 }
