@@ -54,11 +54,9 @@ export function Element(props: ElementProps<AllowedTags> & Required<Pick<Element
     return replace as any;
   }
   if (content !== undefined) {
-    return Element({ ...rest, as });
+    return Element({ ...rest, as, children: content });
   }
-  // create a comp of type div
   return React.createElement(as, props);
-  // return <Comp {...props} />;
 }
 export function Div(props: ElementProps<"div">) {
   return <Element as="div" {...props} />;
