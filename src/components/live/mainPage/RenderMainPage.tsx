@@ -53,7 +53,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames,"frame5", `gap-[30px] flex-row justify-center items-center shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-        <Button frames={combine({"button":{"className":"downloadButton shrink-0 flex"},"clickMe":{"content":"Download Image"}}, frames["downloadButton"])} />
+        <Button frames={combine({"button":{"className":"downloadButton shrink-0 flex"},"title":{"content":"Download Image"}}, frames["downloadButton"])} />
       </Div>
     </Div>
   </Div>
