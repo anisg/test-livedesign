@@ -1,6 +1,6 @@
 // ~ auto-generated - do not edit ~
 import React from 'react';
-import { cls, Div, DivProps, Span, SpanProps } from '../lib';
+import { cls, Div, DivProps, Span, SpanProps, Svg, SvgProps, combine } from '../lib';
 import { Button, ButtonProps } from '../button/Button'
 import { BadgeLiveDesign, BadgeLiveDesignProps } from '../badgeLiveDesign/BadgeLiveDesign'
 
@@ -36,7 +36,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
     <Div {...frames["frame6"]} className={cls(frames,"frame6", `gap-[15px] flex-col items-stretch shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
       <Div {...frames["dogImageContainer"]} className={cls(frames,"dogImageContainer", `gap-2.5 flex-col items-stretch shrink-0 overflow-hidden relative bg-[#e9ecf1] opacity-100 px-[117px] py-[27px] rounded-md flex`)}>
         <Div {...frames["content"]} className={cls(frames,"content", `gap-1.5 flex-col justify-center items-center shrink-0 relative opacity-100 p-0 flex`)}>
-          <svg {...frames["icon"]} className={cls(frames,"icon", ``)} width={64} height={64} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <Svg {...frames["icon"]} className={cls(frames,"icon", ``)} width={64} height={64} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_5_28)">
               <path d="M32 63C49.1208 63 63 49.1208 63 32C63 14.8792 49.1208 1 32 1C14.8792 1 1 14.8792 1 32C1 49.1208 14.8792 63 32 63Z" fill="#DDE0E6" stroke="#949EAE" strokeWidth={2} strokeDasharray="4 5" />
               <path d="M28 18.344C28 15.564 24.846 13.358 21 14C15.354 14.94 12.774 26.012 13 28C13.16 29.406 16.45 31.444 20.312 30C22.834 29.056 24.232 27.1 25 25M36.534 18.344C36.534 15.564 39.688 13.358 43.534 14C49.18 14.94 51.76 26.012 51.534 28C51.374 29.406 48.084 31.444 44.222 30C41.7 29.056 40.512 27.1 39.744 25M24 36V37M40 36V37M30.5 40.5H33.5L32 42L30.5 40.5Z" stroke="#949EAE" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
@@ -47,7 +47,7 @@ export function RenderMainPage(props: RenderMainPageProps) {
                 <rect width={64} height={64} fill="white" />
               </clipPath>
             </defs>
-          </svg>
+          </Svg>
           <Span {...frames["clickToGenerate"]} className={cls(frames,"clickToGenerate", `font-['Inter'] text-xs font-medium text-[#949eae] text-left relative`)}>click to generate</Span>
         </Div>
       </Div>
