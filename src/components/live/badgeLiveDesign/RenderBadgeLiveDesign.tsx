@@ -1,4 +1,3 @@
-
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { cls, Div, DivProps, Span, SpanProps } from '../lib';

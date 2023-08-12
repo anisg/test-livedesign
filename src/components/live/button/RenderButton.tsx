@@ -1,4 +1,3 @@
-
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { cls, HtmlButton, ElementProps, Span, SpanProps } from '../lib';

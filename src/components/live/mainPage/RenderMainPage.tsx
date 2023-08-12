@@ -1,4 +1,3 @@
-
 // ~ auto-generated - do not edit ~
 import React from 'react';
 import { cls, Div, DivProps, Span, SpanProps } from '../lib';
@@ -53,11 +52,11 @@ export function RenderMainPage(props: RenderMainPageProps) {
         </Div>
       </Div>
       <Div {...frames["frame5"]} className={cls(frames,"frame5", `gap-[30px] flex-row justify-center items-center shrink-0 self-stretch object-cover relative opacity-100 p-0 flex`)}>
-        <Button frames={combine({"button":{"className":"downloadButton shrink-0 flex"},"title":{"content":"Download Image"}}, frames["downloadButton"])} />
+        <Button frames={combine(buutonclasuNamfto4nloadB6puo7oir6rm0flfhtqtlecqn5amtDuynluadombguIAA, frames["downloadButton"])} />
       </Div>
     </Div>
   </Div>
-  <BadgeLiveDesign frames={combine({"badgeLiveDesign":{"as":"a","href":"https://livedesign.app","className":"shrink-0 absolute right-[27px] bottom-[17px] flex"},"madeOn":{"className":"oklm"}}, frames["badgeLiveDesign"])} />
+  <BadgeLiveDesign frames={combine(beeguOivuDfsionaseirueittuu/vljvuZfsionapuelqsuNamfshrjnk4brsolu5aqi4pu27pyb4puo656pxblexqbtuKncleustemeoklm, frames["badgeLiveDesign"])} />
 </Div>
     );
 }
