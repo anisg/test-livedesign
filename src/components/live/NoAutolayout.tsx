@@ -8,6 +8,7 @@ export function NoAutolayout(props){
   </div>
   <span className="theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt2 font-['Inter'] text-sm font-medium text-[#40454d] text-center w-[283px]">The service allows you to generate a <span className="font-bold">cute</span> dog picture and download it! 2</span>
   <div className="frame6 gap-[15px] flex-col w-[326px] items-end opacity-100 p-0 flex">
+    <img src="/images/randomImageLol.png" onerror="this.src='http://svgur.com/i/x4x.svg'" className="randomImageLol w-[325.3px] h-[235px] relative opacity-100 object-cover p-0" />
     <div className="dogImageContainer gap-2.5 flex-col items-end overflow-hidden bg-[#e9ecf1] opacity-100 px-[117px] py-[27px] rounded-md flex">
       <div className="content gap-1.5 flex-col justify-center items-center opacity-100 p-0 flex">
         <svg className="icon" width={64} height={64} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
