@@ -4,7 +4,7 @@ export function NoAutolayout(props){
   return (
       <div className="noAutolayout gap-3 flex-col items-center overflow-hidden border shadow-[0px_4px_4px_rgba(0,0,0,0.05)] bg-white opacity-100 px-[21px] py-[17px] rounded-xl border-[#ebebeb] flex">
   <div className="frame7 gap-2 flex-col w-[326px] items-center opacity-100 p-0 flex">
-    <span className="cuteDogPictureGenerator2 font-['Inter'] text-lg font-extrabold text-[#2f3136] text-left w-[271px]">Cute Dog Picture Generator 2</span>
+    <span className="cuteDogPictureGenerator font-['Inter'] text-lg font-extrabold text-[#2f3136] text-left w-[271px]">Cute Dog Picture Generator</span>
   </div>
   <span className="theServiceAllowsYouToGenerateACuteDogPictureAndDownloadIt2 font-['Inter'] text-sm font-medium text-[#40454d] text-center w-[283px]">The service allows you to generate a <span className="font-bold">cute</span> dog picture and download it! 2</span>
   <div className="frame6 gap-[15px] flex-col w-[326px] items-end opacity-100 p-0 flex">
